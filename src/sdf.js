@@ -50,17 +50,20 @@ function preload() {
 
 function create() {
 	goal = this.matter.add.image(800, 60, "block", null, {
+		isStatic: true,
 		ignoreGravity: true,
 		inertia: Infinity,
 	});
 	pushBlock = this.matter.add.image(60, 500, "block", null, {
 		ignoreGravity: true,
 		inertia: Infinity,
+		isStatic: true,
 	});
 
 	block = this.matter.add.image(400, -40, "block", null, {
 		ignoreGravity: true,
 		inertia: Infinity,
+		// isStatic: true
 	});
 
 	// Display initial score
